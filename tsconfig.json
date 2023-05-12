@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": ".",
+    "strict": true,
+    "module": "esnext",
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@nuxt/devtools": ["./packages/devtools/src/index.ts"],
+      "@nuxt/devtools-kit": ["./packages/devtools-kit/src/index.ts"],
+      "@nuxt/devtools-kit/types": ["./packages/devtools-kit/src/types/index.ts"],
+      "@nuxt/devtools-kit/iframe-client": ["./packages/devtools-kit/src/iframe-client.ts"]
+    }
+  },
+  "exclude": [
+    "**/node_modules",
+    "**/dist",
+    "**/playground",
+    "**/docs",
+    "./packages/devtools/client"
+  ]
+}
